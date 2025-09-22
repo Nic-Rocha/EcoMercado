@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-terciaria: #ff9f1cff;
+  --cor-segundaria: #ffbf69;
+  --cor-primaria: #ffffffff;
+  --cor-quintenaria: #cbf3f0ff;
+  --cor-quartenaria:#2ec4b6ff;
+  --cor-sextanaria: rgb(39, 124, 116);
+  --cor-setenaria: #fff6eb;
+  --fonte-principal: "Silkscreen", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh; 
+  background: url("../Assets/pixel_fundosupermercado.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+}
+
+.cabecalho {
+  height: 64px;
+  padding: 18px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  color: var(--cor-primaria);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navegacao {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  padding: 16px 5px 16px 36px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.opcoes:hover {
+  color: var(--cor-terciaria);
+  opacity: 0.7;
+}
+.quadrado{
+  width:600px;
+  height:600px;
+  background-color: var(--cor-setenaria);
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  align-items: center;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 24px;
+  display: none;
+  max-width: 90%;       
+  max-height: 90vh;      
+  overflow-y: auto;
+}
+.titulo{
+  padding: 18px;
+  color: var(--cor-quartenaria);
+}
+.pergunta{
+  padding: 6px;
+  color: var(--cor-terciaria);
+  font-size: 16px;
+}
+.input_design{
+  display: flex;
+  flex-direction: row;
+}
+.input{
+  margin: 6px;
+  padding: 6px;
+  margin-top: 24px;
+  border-color: var(--cor-segundaria);
+  border-radius: 12px;
+  color: var(--cor-sextanaria);
+} 
+.input :focus{
+  margin: 6px;
+  padding: 6px;
+  margin-top: 24px;
+  border-color: var(--cor-segundaria);
+  border-radius: 12px;
+  color: var(--cor-sextanaria);
+  font-family: var(--fonte-principal);
+}
+.butao{
+  color: var(--cor-quintenaria);
+  border-radius: 10px;
+  border-color: var(--cor-terciaria);
+  background-color:var(--cor-quartenaria);
+  padding: 6px;
+  font-size: 16px;
+  font-family: var(--fonte-principal);
+  margin-top: 24px;
+}
+.opcoes button{
+  padding: 12px;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  color: var(--cor-terciaria);
+  background-color: var(--cor-primaria);
+  border-radius: 12px;
+  border: var(--cor-segundaria);
+  align-items: center;
+  margin: 8px;
+}
+.opcoes{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.resposta{
+  padding-bottom: 6px;
+  color: var(--cor-terciaria);
+  font-size: 8px;
+}
+.rodape {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  color: var(--cor-primaria);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
